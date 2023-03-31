@@ -9,11 +9,11 @@ export const ImageGallery = ({ images, onImageClick }) => (
   </ul>
 );
 
-//  ImageGallery.propTypes = {
-//    images: propTypes.arrayOf(
-//      propTypes.shape({
-//        id: propTypes.number.isRequired,
-//      })
-//    ),
-//    onImageClick: propTypes.func.isRequired,
-//  };
+ ImageGallery.propTypes = {
+   images: propTypes.arrayOf(
+     propTypes.shape({
+       id: propTypes.number.isRequired,
+     })
+   ),
+   // onImageClick: propTypes.func.isRequired,
+ };

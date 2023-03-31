@@ -1,4 +1,3 @@
-import React, { Component } from 'react';
 import axios from 'axios';
 
 const BASE_URL = 'https://pixabay.com/api/';
