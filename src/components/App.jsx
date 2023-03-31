@@ -1,7 +1,7 @@
 import { Component } from 'react';
-import Searchbar from './Searchbar/Searchbar';
-import * as API from './Api/Api';
-import { ImageGallery } from './ImageGallery/ImageGallery';
+import Searchbar from 'components/Searchbar/Searchbar';
+import * as API from 'components/Api/Api';
+import { ImageGallery } from 'components/ImageGallery/ImageGallery';
 export class App extends Component {
   state = {
     searchText: '',
