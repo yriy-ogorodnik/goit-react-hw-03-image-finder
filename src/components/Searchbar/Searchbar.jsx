@@ -6,13 +6,12 @@ class Searchbar extends Component {
   };
 
   handlChange = ({ target: { value } }) => {
-    this.setState({ value});
+    this.setState({ value });
   };
 
   handlSubmit = e => {
     e.preventDefault();
-    this.props.createSearchText(this.state.value)
-    
+    this.props.createSearchText(this.state.value);
   };
 
   render() {

@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import Searchbar from './Searchbar/Searchbar';
 import * as API from './Api/Api';
-import {ImageGallery} from './ImageGallery/ImageGallery';
+import { ImageGallery } from './ImageGallery/ImageGallery';
 export class App extends Component {
   state = {
     searchText: '',
@@ -16,19 +16,19 @@ export class App extends Component {
   // метод, который вызывается при обновлении и перерисовке компоненты.
   // Цей метод не викликається під час першого рендеру
   componentDidUpdate(prevProps, prevState) {
-    const searchText = this.state.searchText.trim()
+    const searchText = this.state.searchText.trim();
     if (prevState.searchText !== searchText && searchText) {
-      API.fetchImages(searchText).then(({ hits,totalHits }) => {
-        this.setState({images:hits})
+      API.fetchImages(searchText).then(({ hits, totalHits }) => {
+        this.setState({ images: hits });
       });
     }
   }
 
   render() {
     return (
-      <div className='App'>
+      <div className="App">
         <Searchbar createSearchText={this.createSearchText} />
-        <ImageGallery images={this.state.images}/>
+        <ImageGallery images={this.state.images} />
       </div>
     );
   }
