@@ -1,5 +1,5 @@
 import css from './Modal.module.css';
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 const Modal = ({ onClose, currentImageUrl }) => (
   <div className={css.Overlay} onClick={onClose}>
@@ -10,8 +10,8 @@ const Modal = ({ onClose, currentImageUrl }) => (
 );
 
 Modal.propTypes = {
-  currentImageUrl: propTypes.string.isRequired,
-  onClose: propTypes.func.isRequired,
+  currentImageUrl: PropTypes.string.isRequired,
+  onClose: PropTypes.func.isRequired,
 };
 
 export default Modal;

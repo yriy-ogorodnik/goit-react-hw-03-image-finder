@@ -1,4 +1,4 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 function ImageGalleryItem({ image, openModal }) {
   return (
@@ -15,3 +15,8 @@ function ImageGalleryItem({ image, openModal }) {
 }
 
 export default ImageGalleryItem;
+
+ImageGalleryItem.propTypes = {
+  image: PropTypes.object.isRequired,
+  openModal: PropTypes.func.isRequired,
+};
