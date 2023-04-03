@@ -8,7 +8,7 @@ function Button({ onNextFetch }) {
   );
 }
 
-Button.propTotype = {
+Button.propTypes = {
   onNextFetch: PropTypes.func.isRequired,
 };
 
